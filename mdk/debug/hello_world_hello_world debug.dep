@@ -1,0 +1,455 @@
+Dependencies for Project 'hello_world', Target 'hello_world debug': (DO NOT MODIFY !)
+CompilerVersion: 6140000::V6.14::ARMCLANG
+F (../hello_world.c)(0x5F73DDB3)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../.. -I ../../../../../CMSIS/Include -I ../../../../../devices -I ../../../../../devices/MIMXRT1062/drivers -I ../../../../../devices/MIMXRT1062 -I ../../../../../devices/MIMXRT1062/utilities/str -I ../../../../../devices/MIMXRT1062/utilities/debug_console -I ../../../../../components/uart -I ../../../../../components/serial_manager -I ../../../../../components/lists -I ../../../../../devices/MIMXRT1062/xip -I ../../../xip -I ../../../../../devices/MIMXRT1062/utilities -I ../../../../../../../../../SDK_2.8.1_EVK-MIMXRT1060/components/flash/nor/flexspi -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb -ffixed--IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0-IC:/Keil_v5/ARM/CMSIS/Include-IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0/Device/Include-D__UVISION_VERSION="531" -DCPU_MIMXRT1062DVL6A -DDEBUG -DCPU_MIMXRT1062DVL6A -DPRINTF_FLOAT_ENABLE="0" -DSCANF_FLOAT_ENABLE="0" -DPRINTF_ADVANCED_ENABLE="0" -DSCANF_ADVANCED_ENABLE="0" -DSERIAL_PORT_TYPE_UART="1"-o debug/hello_world.o -MD)
+I (..\..\..\..\..\devices\MIMXRT1062\fsl_device_registers.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\CMSIS\Include\core_cm7.h)(0x5EA57C74)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED60BE4)
+I (..\..\..\..\..\CMSIS\Include\cmsis_version.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_compiler.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_armclang.h)(0x5EA57C74)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0CC2EC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0CC318)
+I (..\..\..\..\..\CMSIS\Include\mpu_armv7.h)(0x5EA57C74)
+I (..\..\..\..\..\devices\MIMXRT1062\system_MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062_features.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\utilities\debug_console\fsl_debug_console.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_common.h)(0x5EA57C7C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5ED60BE4)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_clock.h)(0x5EA57C7C)
+I (..\..\..\..\..\components\serial_manager\serial_manager.h)(0x5EA57C7C)
+I (..\..\..\..\..\components\serial_manager\serial_port_uart.h)(0x5EA57C7C)
+I (..\..\..\..\..\components\uart\uart.h)(0x5EA57C7C)
+I (..\board.h)(0x5EA57C74)
+I (..\clock_config.h)(0x5EA57C74)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_gpio.h)(0x5EA57C7C)
+I (..\pin_mux.h)(0x5EA57C74)
+I (..\flash.h)(0x5F71EDA0)
+F (..\rom_api_flash.c)(0x5F733B83)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../.. -I ../../../../../CMSIS/Include -I ../../../../../devices -I ../../../../../devices/MIMXRT1062/drivers -I ../../../../../devices/MIMXRT1062 -I ../../../../../devices/MIMXRT1062/utilities/str -I ../../../../../devices/MIMXRT1062/utilities/debug_console -I ../../../../../components/uart -I ../../../../../components/serial_manager -I ../../../../../components/lists -I ../../../../../devices/MIMXRT1062/xip -I ../../../xip -I ../../../../../devices/MIMXRT1062/utilities -I ../../../../../../../../../SDK_2.8.1_EVK-MIMXRT1060/components/flash/nor/flexspi -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb -ffixed--IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0-IC:/Keil_v5/ARM/CMSIS/Include-IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0/Device/Include-D__UVISION_VERSION="531" -DCPU_MIMXRT1062DVL6A -DDEBUG -DCPU_MIMXRT1062DVL6A -DPRINTF_FLOAT_ENABLE="0" -DSCANF_FLOAT_ENABLE="0" -DPRINTF_ADVANCED_ENABLE="0" -DSCANF_ADVANCED_ENABLE="0" -DSERIAL_PORT_TYPE_UART="1"-o debug/rom_api_flash.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED60BE4)
+I (..\board.h)(0x5EA57C74)
+I (..\clock_config.h)(0x5EA57C74)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_common.h)(0x5EA57C7C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5ED60BE4)
+I (..\..\..\..\..\devices\MIMXRT1062\fsl_device_registers.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\CMSIS\Include\core_cm7.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_version.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_compiler.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_armclang.h)(0x5EA57C74)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0CC2EC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0CC318)
+I (..\..\..\..\..\CMSIS\Include\mpu_armv7.h)(0x5EA57C74)
+I (..\..\..\..\..\devices\MIMXRT1062\system_MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062_features.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_clock.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_gpio.h)(0x5EA57C7C)
+F (../pin_mux.c)(0x5EA57C74)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../.. -I ../../../../../CMSIS/Include -I ../../../../../devices -I ../../../../../devices/MIMXRT1062/drivers -I ../../../../../devices/MIMXRT1062 -I ../../../../../devices/MIMXRT1062/utilities/str -I ../../../../../devices/MIMXRT1062/utilities/debug_console -I ../../../../../components/uart -I ../../../../../components/serial_manager -I ../../../../../components/lists -I ../../../../../devices/MIMXRT1062/xip -I ../../../xip -I ../../../../../devices/MIMXRT1062/utilities -I ../../../../../../../../../SDK_2.8.1_EVK-MIMXRT1060/components/flash/nor/flexspi -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb -ffixed--IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0-IC:/Keil_v5/ARM/CMSIS/Include-IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0/Device/Include-D__UVISION_VERSION="531" -DCPU_MIMXRT1062DVL6A -DDEBUG -DCPU_MIMXRT1062DVL6A -DPRINTF_FLOAT_ENABLE="0" -DSCANF_FLOAT_ENABLE="0" -DPRINTF_ADVANCED_ENABLE="0" -DSCANF_ADVANCED_ENABLE="0" -DSERIAL_PORT_TYPE_UART="1"-o debug/pin_mux.o -MD)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_common.h)(0x5EA57C7C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5ED60BE4)
+I (..\..\..\..\..\devices\MIMXRT1062\fsl_device_registers.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\CMSIS\Include\core_cm7.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_version.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_compiler.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_armclang.h)(0x5EA57C74)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0CC2EC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0CC318)
+I (..\..\..\..\..\CMSIS\Include\mpu_armv7.h)(0x5EA57C74)
+I (..\..\..\..\..\devices\MIMXRT1062\system_MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062_features.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_clock.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_iomuxc.h)(0x5EA57C7C)
+I (..\pin_mux.h)(0x5EA57C74)
+F (../pin_mux.h)(0x5EA57C74)()
+F (../board.c)(0x5F4F45D2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../.. -I ../../../../../CMSIS/Include -I ../../../../../devices -I ../../../../../devices/MIMXRT1062/drivers -I ../../../../../devices/MIMXRT1062 -I ../../../../../devices/MIMXRT1062/utilities/str -I ../../../../../devices/MIMXRT1062/utilities/debug_console -I ../../../../../components/uart -I ../../../../../components/serial_manager -I ../../../../../components/lists -I ../../../../../devices/MIMXRT1062/xip -I ../../../xip -I ../../../../../devices/MIMXRT1062/utilities -I ../../../../../../../../../SDK_2.8.1_EVK-MIMXRT1060/components/flash/nor/flexspi -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb -ffixed--IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0-IC:/Keil_v5/ARM/CMSIS/Include-IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0/Device/Include-D__UVISION_VERSION="531" -DCPU_MIMXRT1062DVL6A -DDEBUG -DCPU_MIMXRT1062DVL6A -DPRINTF_FLOAT_ENABLE="0" -DSCANF_FLOAT_ENABLE="0" -DPRINTF_ADVANCED_ENABLE="0" -DSCANF_ADVANCED_ENABLE="0" -DSERIAL_PORT_TYPE_UART="1"-o debug/board.o -MD)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_common.h)(0x5EA57C7C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5ED60BE4)
+I (..\..\..\..\..\devices\MIMXRT1062\fsl_device_registers.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\CMSIS\Include\core_cm7.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_version.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_compiler.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_armclang.h)(0x5EA57C74)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0CC2EC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0CC318)
+I (..\..\..\..\..\CMSIS\Include\mpu_armv7.h)(0x5EA57C74)
+I (..\..\..\..\..\devices\MIMXRT1062\system_MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062_features.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_clock.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\utilities\debug_console\fsl_debug_console.h)(0x5EA57C7C)
+I (..\..\..\..\..\components\serial_manager\serial_manager.h)(0x5EA57C7C)
+I (..\..\..\..\..\components\serial_manager\serial_port_uart.h)(0x5EA57C7C)
+I (..\..\..\..\..\components\uart\uart.h)(0x5EA57C7C)
+I (..\board.h)(0x5EA57C74)
+I (..\clock_config.h)(0x5EA57C74)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_gpio.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_iomuxc.h)(0x5EA57C7C)
+F (../board.h)(0x5EA57C74)()
+F (../clock_config.c)(0x5EA57C74)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../.. -I ../../../../../CMSIS/Include -I ../../../../../devices -I ../../../../../devices/MIMXRT1062/drivers -I ../../../../../devices/MIMXRT1062 -I ../../../../../devices/MIMXRT1062/utilities/str -I ../../../../../devices/MIMXRT1062/utilities/debug_console -I ../../../../../components/uart -I ../../../../../components/serial_manager -I ../../../../../components/lists -I ../../../../../devices/MIMXRT1062/xip -I ../../../xip -I ../../../../../devices/MIMXRT1062/utilities -I ../../../../../../../../../SDK_2.8.1_EVK-MIMXRT1060/components/flash/nor/flexspi -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb -ffixed--IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0-IC:/Keil_v5/ARM/CMSIS/Include-IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0/Device/Include-D__UVISION_VERSION="531" -DCPU_MIMXRT1062DVL6A -DDEBUG -DCPU_MIMXRT1062DVL6A -DPRINTF_FLOAT_ENABLE="0" -DSCANF_FLOAT_ENABLE="0" -DPRINTF_ADVANCED_ENABLE="0" -DSCANF_ADVANCED_ENABLE="0" -DSERIAL_PORT_TYPE_UART="1"-o debug/clock_config.o -MD)
+I (..\clock_config.h)(0x5EA57C74)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_common.h)(0x5EA57C7C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5ED60BE4)
+I (..\..\..\..\..\devices\MIMXRT1062\fsl_device_registers.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\CMSIS\Include\core_cm7.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_version.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_compiler.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_armclang.h)(0x5EA57C74)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0CC2EC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0CC318)
+I (..\..\..\..\..\CMSIS\Include\mpu_armv7.h)(0x5EA57C74)
+I (..\..\..\..\..\devices\MIMXRT1062\system_MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062_features.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_clock.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_iomuxc.h)(0x5EA57C7C)
+F (../clock_config.h)(0x5EA57C74)()
+F (../readme.txt)(0x5EA57C74)()
+F (../../../../../devices/MIMXRT1062/drivers/fsl_clock.c)(0x5EA57C7C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../.. -I ../../../../../CMSIS/Include -I ../../../../../devices -I ../../../../../devices/MIMXRT1062/drivers -I ../../../../../devices/MIMXRT1062 -I ../../../../../devices/MIMXRT1062/utilities/str -I ../../../../../devices/MIMXRT1062/utilities/debug_console -I ../../../../../components/uart -I ../../../../../components/serial_manager -I ../../../../../components/lists -I ../../../../../devices/MIMXRT1062/xip -I ../../../xip -I ../../../../../devices/MIMXRT1062/utilities -I ../../../../../../../../../SDK_2.8.1_EVK-MIMXRT1060/components/flash/nor/flexspi -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb -ffixed--IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0-IC:/Keil_v5/ARM/CMSIS/Include-IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0/Device/Include-D__UVISION_VERSION="531" -DCPU_MIMXRT1062DVL6A -DDEBUG -DCPU_MIMXRT1062DVL6A -DPRINTF_FLOAT_ENABLE="0" -DSCANF_FLOAT_ENABLE="0" -DPRINTF_ADVANCED_ENABLE="0" -DSCANF_ADVANCED_ENABLE="0" -DSERIAL_PORT_TYPE_UART="1"-o debug/fsl_clock.o -MD)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_clock.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_common.h)(0x5EA57C7C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5ED60BE4)
+I (..\..\..\..\..\devices\MIMXRT1062\fsl_device_registers.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\CMSIS\Include\core_cm7.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_version.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_compiler.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_armclang.h)(0x5EA57C74)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0CC2EC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0CC318)
+I (..\..\..\..\..\CMSIS\Include\mpu_armv7.h)(0x5EA57C74)
+I (..\..\..\..\..\devices\MIMXRT1062\system_MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062_features.h)(0x5EA57C7C)
+F (../../../../../devices/MIMXRT1062/drivers/fsl_clock.h)(0x5EA57C7C)()
+F (../../../../../devices/MIMXRT1062/drivers/fsl_common.c)(0x5EA57C7C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../.. -I ../../../../../CMSIS/Include -I ../../../../../devices -I ../../../../../devices/MIMXRT1062/drivers -I ../../../../../devices/MIMXRT1062 -I ../../../../../devices/MIMXRT1062/utilities/str -I ../../../../../devices/MIMXRT1062/utilities/debug_console -I ../../../../../components/uart -I ../../../../../components/serial_manager -I ../../../../../components/lists -I ../../../../../devices/MIMXRT1062/xip -I ../../../xip -I ../../../../../devices/MIMXRT1062/utilities -I ../../../../../../../../../SDK_2.8.1_EVK-MIMXRT1060/components/flash/nor/flexspi -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb -ffixed--IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0-IC:/Keil_v5/ARM/CMSIS/Include-IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0/Device/Include-D__UVISION_VERSION="531" -DCPU_MIMXRT1062DVL6A -DDEBUG -DCPU_MIMXRT1062DVL6A -DPRINTF_FLOAT_ENABLE="0" -DSCANF_FLOAT_ENABLE="0" -DPRINTF_ADVANCED_ENABLE="0" -DSCANF_ADVANCED_ENABLE="0" -DSERIAL_PORT_TYPE_UART="1"-o debug/fsl_common.o -MD)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_common.h)(0x5EA57C7C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5ED60BE4)
+I (..\..\..\..\..\devices\MIMXRT1062\fsl_device_registers.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\CMSIS\Include\core_cm7.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_version.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_compiler.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_armclang.h)(0x5EA57C74)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0CC2EC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0CC318)
+I (..\..\..\..\..\CMSIS\Include\mpu_armv7.h)(0x5EA57C74)
+I (..\..\..\..\..\devices\MIMXRT1062\system_MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062_features.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_clock.h)(0x5EA57C7C)
+F (../../../../../devices/MIMXRT1062/drivers/fsl_common.h)(0x5EA57C7C)()
+F (../../../../../devices/MIMXRT1062/drivers/fsl_lpuart.c)(0x5F3648AA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../.. -I ../../../../../CMSIS/Include -I ../../../../../devices -I ../../../../../devices/MIMXRT1062/drivers -I ../../../../../devices/MIMXRT1062 -I ../../../../../devices/MIMXRT1062/utilities/str -I ../../../../../devices/MIMXRT1062/utilities/debug_console -I ../../../../../components/uart -I ../../../../../components/serial_manager -I ../../../../../components/lists -I ../../../../../devices/MIMXRT1062/xip -I ../../../xip -I ../../../../../devices/MIMXRT1062/utilities -I ../../../../../../../../../SDK_2.8.1_EVK-MIMXRT1060/components/flash/nor/flexspi -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb -ffixed--IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0-IC:/Keil_v5/ARM/CMSIS/Include-IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0/Device/Include-D__UVISION_VERSION="531" -DCPU_MIMXRT1062DVL6A -DDEBUG -DCPU_MIMXRT1062DVL6A -DPRINTF_FLOAT_ENABLE="0" -DSCANF_FLOAT_ENABLE="0" -DPRINTF_ADVANCED_ENABLE="0" -DSCANF_ADVANCED_ENABLE="0" -DSERIAL_PORT_TYPE_UART="1"-o debug/fsl_lpuart.o -MD)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_lpuart.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_common.h)(0x5EA57C7C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5ED60BE4)
+I (..\..\..\..\..\devices\MIMXRT1062\fsl_device_registers.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\CMSIS\Include\core_cm7.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_version.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_compiler.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_armclang.h)(0x5EA57C74)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0CC2EC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0CC318)
+I (..\..\..\..\..\CMSIS\Include\mpu_armv7.h)(0x5EA57C74)
+I (..\..\..\..\..\devices\MIMXRT1062\system_MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062_features.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_clock.h)(0x5EA57C7C)
+F (../../../../../devices/MIMXRT1062/drivers/fsl_lpuart.h)(0x5EA57C7C)()
+F (../../../../../devices/MIMXRT1062/drivers/fsl_iomuxc.h)(0x5EA57C7C)()
+F (../../../../../devices/MIMXRT1062/drivers/fsl_gpio.c)(0x5F3C86D2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../.. -I ../../../../../CMSIS/Include -I ../../../../../devices -I ../../../../../devices/MIMXRT1062/drivers -I ../../../../../devices/MIMXRT1062 -I ../../../../../devices/MIMXRT1062/utilities/str -I ../../../../../devices/MIMXRT1062/utilities/debug_console -I ../../../../../components/uart -I ../../../../../components/serial_manager -I ../../../../../components/lists -I ../../../../../devices/MIMXRT1062/xip -I ../../../xip -I ../../../../../devices/MIMXRT1062/utilities -I ../../../../../../../../../SDK_2.8.1_EVK-MIMXRT1060/components/flash/nor/flexspi -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb -ffixed--IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0-IC:/Keil_v5/ARM/CMSIS/Include-IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0/Device/Include-D__UVISION_VERSION="531" -DCPU_MIMXRT1062DVL6A -DDEBUG -DCPU_MIMXRT1062DVL6A -DPRINTF_FLOAT_ENABLE="0" -DSCANF_FLOAT_ENABLE="0" -DPRINTF_ADVANCED_ENABLE="0" -DSCANF_ADVANCED_ENABLE="0" -DSERIAL_PORT_TYPE_UART="1"-o debug/fsl_gpio.o -MD)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_gpio.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_common.h)(0x5EA57C7C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5ED60BE4)
+I (..\..\..\..\..\devices\MIMXRT1062\fsl_device_registers.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\CMSIS\Include\core_cm7.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_version.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_compiler.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_armclang.h)(0x5EA57C74)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0CC2EC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0CC318)
+I (..\..\..\..\..\CMSIS\Include\mpu_armv7.h)(0x5EA57C74)
+I (..\..\..\..\..\devices\MIMXRT1062\system_MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062_features.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_clock.h)(0x5EA57C7C)
+F (../../../../../devices/MIMXRT1062/drivers/fsl_gpio.h)(0x5EA57C7C)()
+F (../../../../../devices/MIMXRT1062/MIMXRT1062.h)(0x5EA57C7C)()
+F (../../../../../devices/MIMXRT1062/MIMXRT1062_features.h)(0x5EA57C7C)()
+F (../../../../../devices/MIMXRT1062/fsl_device_registers.h)(0x5EA57C7C)()
+F (../../../../../devices/MIMXRT1062/system_MIMXRT1062.c)(0x5EA57C7C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../.. -I ../../../../../CMSIS/Include -I ../../../../../devices -I ../../../../../devices/MIMXRT1062/drivers -I ../../../../../devices/MIMXRT1062 -I ../../../../../devices/MIMXRT1062/utilities/str -I ../../../../../devices/MIMXRT1062/utilities/debug_console -I ../../../../../components/uart -I ../../../../../components/serial_manager -I ../../../../../components/lists -I ../../../../../devices/MIMXRT1062/xip -I ../../../xip -I ../../../../../devices/MIMXRT1062/utilities -I ../../../../../../../../../SDK_2.8.1_EVK-MIMXRT1060/components/flash/nor/flexspi -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb -ffixed--IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0-IC:/Keil_v5/ARM/CMSIS/Include-IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0/Device/Include-D__UVISION_VERSION="531" -DCPU_MIMXRT1062DVL6A -DDEBUG -DCPU_MIMXRT1062DVL6A -DPRINTF_FLOAT_ENABLE="0" -DSCANF_FLOAT_ENABLE="0" -DPRINTF_ADVANCED_ENABLE="0" -DSCANF_ADVANCED_ENABLE="0" -DSERIAL_PORT_TYPE_UART="1"-o debug/system_mimxrt1062.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED60BE4)
+I (..\..\..\..\..\devices\MIMXRT1062\fsl_device_registers.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\CMSIS\Include\core_cm7.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_version.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_compiler.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_armclang.h)(0x5EA57C74)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0CC2EC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0CC318)
+I (..\..\..\..\..\CMSIS\Include\mpu_armv7.h)(0x5EA57C74)
+I (..\..\..\..\..\devices\MIMXRT1062\system_MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062_features.h)(0x5EA57C7C)
+F (../../../../../devices/MIMXRT1062/system_MIMXRT1062.h)(0x5EA57C7C)()
+F (../../../../../devices/MIMXRT1062/utilities/debug_console/fsl_debug_console.c)(0x5EA57C7C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../.. -I ../../../../../CMSIS/Include -I ../../../../../devices -I ../../../../../devices/MIMXRT1062/drivers -I ../../../../../devices/MIMXRT1062 -I ../../../../../devices/MIMXRT1062/utilities/str -I ../../../../../devices/MIMXRT1062/utilities/debug_console -I ../../../../../components/uart -I ../../../../../components/serial_manager -I ../../../../../components/lists -I ../../../../../devices/MIMXRT1062/xip -I ../../../xip -I ../../../../../devices/MIMXRT1062/utilities -I ../../../../../../../../../SDK_2.8.1_EVK-MIMXRT1060/components/flash/nor/flexspi -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb -ffixed--IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0-IC:/Keil_v5/ARM/CMSIS/Include-IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0/Device/Include-D__UVISION_VERSION="531" -DCPU_MIMXRT1062DVL6A -DDEBUG -DCPU_MIMXRT1062DVL6A -DPRINTF_FLOAT_ENABLE="0" -DSCANF_FLOAT_ENABLE="0" -DPRINTF_ADVANCED_ENABLE="0" -DSCANF_ADVANCED_ENABLE="0" -DSERIAL_PORT_TYPE_UART="1"-o debug/fsl_debug_console.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x5ED60BE4)
+I (..\..\..\..\..\devices\MIMXRT1062\utilities\debug_console\fsl_debug_console_conf.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_common.h)(0x5EA57C7C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED60BE4)
+I (..\..\..\..\..\devices\MIMXRT1062\fsl_device_registers.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\CMSIS\Include\core_cm7.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_version.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_compiler.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_armclang.h)(0x5EA57C74)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0CC2EC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0CC318)
+I (..\..\..\..\..\CMSIS\Include\mpu_armv7.h)(0x5EA57C74)
+I (..\..\..\..\..\devices\MIMXRT1062\system_MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062_features.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_clock.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\utilities\str\fsl_str.h)(0x5EA57C7C)
+I (..\..\..\..\..\components\serial_manager\serial_manager.h)(0x5EA57C7C)
+I (..\..\..\..\..\components\serial_manager\serial_port_uart.h)(0x5EA57C7C)
+I (..\..\..\..\..\components\uart\uart.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\utilities\debug_console\fsl_debug_console.h)(0x5EA57C7C)
+F (../../../../../devices/MIMXRT1062/utilities/debug_console/fsl_debug_console.h)(0x5EA57C7C)()
+F (../../../../../devices/MIMXRT1062/utilities/debug_console/fsl_debug_console_conf.h)(0x5EA57C7C)()
+F (../../../../../devices/MIMXRT1062/utilities/str/fsl_str.c)(0x5EA57C7C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../.. -I ../../../../../CMSIS/Include -I ../../../../../devices -I ../../../../../devices/MIMXRT1062/drivers -I ../../../../../devices/MIMXRT1062 -I ../../../../../devices/MIMXRT1062/utilities/str -I ../../../../../devices/MIMXRT1062/utilities/debug_console -I ../../../../../components/uart -I ../../../../../components/serial_manager -I ../../../../../components/lists -I ../../../../../devices/MIMXRT1062/xip -I ../../../xip -I ../../../../../devices/MIMXRT1062/utilities -I ../../../../../../../../../SDK_2.8.1_EVK-MIMXRT1060/components/flash/nor/flexspi -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb -ffixed--IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0-IC:/Keil_v5/ARM/CMSIS/Include-IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0/Device/Include-D__UVISION_VERSION="531" -DCPU_MIMXRT1062DVL6A -DDEBUG -DCPU_MIMXRT1062DVL6A -DPRINTF_FLOAT_ENABLE="0" -DSCANF_FLOAT_ENABLE="0" -DPRINTF_ADVANCED_ENABLE="0" -DSCANF_ADVANCED_ENABLE="0" -DSERIAL_PORT_TYPE_UART="1"-o debug/fsl_str.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5ED60BE4)
+I (..\..\..\..\..\devices\MIMXRT1062\utilities\str\fsl_str.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_common.h)(0x5EA57C7C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED60BE4)
+I (..\..\..\..\..\devices\MIMXRT1062\fsl_device_registers.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\CMSIS\Include\core_cm7.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_version.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_compiler.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_armclang.h)(0x5EA57C74)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0CC2EC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0CC318)
+I (..\..\..\..\..\CMSIS\Include\mpu_armv7.h)(0x5EA57C74)
+I (..\..\..\..\..\devices\MIMXRT1062\system_MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062_features.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_clock.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\utilities\debug_console\fsl_debug_console_conf.h)(0x5EA57C7C)
+F (../../../../../devices/MIMXRT1062/utilities/str/fsl_str.h)(0x5EA57C7C)()
+F (../../../../../devices/MIMXRT1062/utilities/fsl_assert.c)(0x5EA57C7C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../.. -I ../../../../../CMSIS/Include -I ../../../../../devices -I ../../../../../devices/MIMXRT1062/drivers -I ../../../../../devices/MIMXRT1062 -I ../../../../../devices/MIMXRT1062/utilities/str -I ../../../../../devices/MIMXRT1062/utilities/debug_console -I ../../../../../components/uart -I ../../../../../components/serial_manager -I ../../../../../components/lists -I ../../../../../devices/MIMXRT1062/xip -I ../../../xip -I ../../../../../devices/MIMXRT1062/utilities -I ../../../../../../../../../SDK_2.8.1_EVK-MIMXRT1060/components/flash/nor/flexspi -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb -ffixed--IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0-IC:/Keil_v5/ARM/CMSIS/Include-IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0/Device/Include-D__UVISION_VERSION="531" -DCPU_MIMXRT1062DVL6A -DDEBUG -DCPU_MIMXRT1062DVL6A -DPRINTF_FLOAT_ENABLE="0" -DSCANF_FLOAT_ENABLE="0" -DPRINTF_ADVANCED_ENABLE="0" -DSCANF_ADVANCED_ENABLE="0" -DSERIAL_PORT_TYPE_UART="1"-o debug/fsl_assert.o -MD)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_common.h)(0x5EA57C7C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5ED60BE4)
+I (..\..\..\..\..\devices\MIMXRT1062\fsl_device_registers.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\CMSIS\Include\core_cm7.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_version.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_compiler.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_armclang.h)(0x5EA57C74)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0CC2EC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0CC318)
+I (..\..\..\..\..\CMSIS\Include\mpu_armv7.h)(0x5EA57C74)
+I (..\..\..\..\..\devices\MIMXRT1062\system_MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062_features.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_clock.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\utilities\debug_console\fsl_debug_console.h)(0x5EA57C7C)
+I (..\..\..\..\..\components\serial_manager\serial_manager.h)(0x5EA57C7C)
+I (..\..\..\..\..\components\serial_manager\serial_port_uart.h)(0x5EA57C7C)
+I (..\..\..\..\..\components\uart\uart.h)(0x5EA57C7C)
+F (../../../../../components/uart/lpuart_adapter.c)(0x5EA57C7C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../.. -I ../../../../../CMSIS/Include -I ../../../../../devices -I ../../../../../devices/MIMXRT1062/drivers -I ../../../../../devices/MIMXRT1062 -I ../../../../../devices/MIMXRT1062/utilities/str -I ../../../../../devices/MIMXRT1062/utilities/debug_console -I ../../../../../components/uart -I ../../../../../components/serial_manager -I ../../../../../components/lists -I ../../../../../devices/MIMXRT1062/xip -I ../../../xip -I ../../../../../devices/MIMXRT1062/utilities -I ../../../../../../../../../SDK_2.8.1_EVK-MIMXRT1060/components/flash/nor/flexspi -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb -ffixed--IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0-IC:/Keil_v5/ARM/CMSIS/Include-IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0/Device/Include-D__UVISION_VERSION="531" -DCPU_MIMXRT1062DVL6A -DDEBUG -DCPU_MIMXRT1062DVL6A -DPRINTF_FLOAT_ENABLE="0" -DSCANF_FLOAT_ENABLE="0" -DPRINTF_ADVANCED_ENABLE="0" -DSCANF_ADVANCED_ENABLE="0" -DSERIAL_PORT_TYPE_UART="1"-o debug/lpuart_adapter.o -MD)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_common.h)(0x5EA57C7C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5ED60BE4)
+I (..\..\..\..\..\devices\MIMXRT1062\fsl_device_registers.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\CMSIS\Include\core_cm7.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_version.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_compiler.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_armclang.h)(0x5EA57C74)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0CC2EC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0CC318)
+I (..\..\..\..\..\CMSIS\Include\mpu_armv7.h)(0x5EA57C74)
+I (..\..\..\..\..\devices\MIMXRT1062\system_MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062_features.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_clock.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_lpuart.h)(0x5EA57C7C)
+I (..\..\..\..\..\components\uart\uart.h)(0x5EA57C7C)
+F (../../../../../components/uart/uart.h)(0x5EA57C7C)()
+F (../../../../../components/serial_manager/serial_manager.c)(0x5EA57C7C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../.. -I ../../../../../CMSIS/Include -I ../../../../../devices -I ../../../../../devices/MIMXRT1062/drivers -I ../../../../../devices/MIMXRT1062 -I ../../../../../devices/MIMXRT1062/utilities/str -I ../../../../../devices/MIMXRT1062/utilities/debug_console -I ../../../../../components/uart -I ../../../../../components/serial_manager -I ../../../../../components/lists -I ../../../../../devices/MIMXRT1062/xip -I ../../../xip -I ../../../../../devices/MIMXRT1062/utilities -I ../../../../../../../../../SDK_2.8.1_EVK-MIMXRT1060/components/flash/nor/flexspi -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb -ffixed--IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0-IC:/Keil_v5/ARM/CMSIS/Include-IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0/Device/Include-D__UVISION_VERSION="531" -DCPU_MIMXRT1062DVL6A -DDEBUG -DCPU_MIMXRT1062DVL6A -DPRINTF_FLOAT_ENABLE="0" -DSCANF_FLOAT_ENABLE="0" -DPRINTF_ADVANCED_ENABLE="0" -DSCANF_ADVANCED_ENABLE="0" -DSERIAL_PORT_TYPE_UART="1"-o debug/serial_manager.o -MD)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_common.h)(0x5EA57C7C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5ED60BE4)
+I (..\..\..\..\..\devices\MIMXRT1062\fsl_device_registers.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\CMSIS\Include\core_cm7.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_version.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_compiler.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_armclang.h)(0x5EA57C74)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0CC2EC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0CC318)
+I (..\..\..\..\..\CMSIS\Include\mpu_armv7.h)(0x5EA57C74)
+I (..\..\..\..\..\devices\MIMXRT1062\system_MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062_features.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_clock.h)(0x5EA57C7C)
+I (..\..\..\..\..\components\serial_manager\serial_manager.h)(0x5EA57C7C)
+I (..\..\..\..\..\components\serial_manager\serial_port_uart.h)(0x5EA57C7C)
+I (..\..\..\..\..\components\uart\uart.h)(0x5EA57C7C)
+I (..\..\..\..\..\components\serial_manager\serial_port_internal.h)(0x5EA57C7C)
+F (../../../../../components/serial_manager/serial_manager.h)(0x5EA57C7C)()
+F (../../../../../components/serial_manager/serial_port_internal.h)(0x5EA57C7C)()
+F (../../../../../components/serial_manager/serial_port_uart.c)(0x5EA57C7C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../.. -I ../../../../../CMSIS/Include -I ../../../../../devices -I ../../../../../devices/MIMXRT1062/drivers -I ../../../../../devices/MIMXRT1062 -I ../../../../../devices/MIMXRT1062/utilities/str -I ../../../../../devices/MIMXRT1062/utilities/debug_console -I ../../../../../components/uart -I ../../../../../components/serial_manager -I ../../../../../components/lists -I ../../../../../devices/MIMXRT1062/xip -I ../../../xip -I ../../../../../devices/MIMXRT1062/utilities -I ../../../../../../../../../SDK_2.8.1_EVK-MIMXRT1060/components/flash/nor/flexspi -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb -ffixed--IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0-IC:/Keil_v5/ARM/CMSIS/Include-IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0/Device/Include-D__UVISION_VERSION="531" -DCPU_MIMXRT1062DVL6A -DDEBUG -DCPU_MIMXRT1062DVL6A -DPRINTF_FLOAT_ENABLE="0" -DSCANF_FLOAT_ENABLE="0" -DPRINTF_ADVANCED_ENABLE="0" -DSCANF_ADVANCED_ENABLE="0" -DSERIAL_PORT_TYPE_UART="1"-o debug/serial_port_uart.o -MD)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_common.h)(0x5EA57C7C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5ED60BE4)
+I (..\..\..\..\..\devices\MIMXRT1062\fsl_device_registers.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\CMSIS\Include\core_cm7.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_version.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_compiler.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_armclang.h)(0x5EA57C74)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0CC2EC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0CC318)
+I (..\..\..\..\..\CMSIS\Include\mpu_armv7.h)(0x5EA57C74)
+I (..\..\..\..\..\devices\MIMXRT1062\system_MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062_features.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_clock.h)(0x5EA57C7C)
+I (..\..\..\..\..\components\serial_manager\serial_manager.h)(0x5EA57C7C)
+I (..\..\..\..\..\components\serial_manager\serial_port_uart.h)(0x5EA57C7C)
+I (..\..\..\..\..\components\uart\uart.h)(0x5EA57C7C)
+I (..\..\..\..\..\components\serial_manager\serial_port_internal.h)(0x5EA57C7C)
+F (../../../../../components/serial_manager/serial_port_uart.h)(0x5EA57C7C)()
+F (../../../../../components/lists/generic_list.c)(0x5EA57C7C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../.. -I ../../../../../CMSIS/Include -I ../../../../../devices -I ../../../../../devices/MIMXRT1062/drivers -I ../../../../../devices/MIMXRT1062 -I ../../../../../devices/MIMXRT1062/utilities/str -I ../../../../../devices/MIMXRT1062/utilities/debug_console -I ../../../../../components/uart -I ../../../../../components/serial_manager -I ../../../../../components/lists -I ../../../../../devices/MIMXRT1062/xip -I ../../../xip -I ../../../../../devices/MIMXRT1062/utilities -I ../../../../../../../../../SDK_2.8.1_EVK-MIMXRT1060/components/flash/nor/flexspi -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb -ffixed--IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0-IC:/Keil_v5/ARM/CMSIS/Include-IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0/Device/Include-D__UVISION_VERSION="531" -DCPU_MIMXRT1062DVL6A -DDEBUG -DCPU_MIMXRT1062DVL6A -DPRINTF_FLOAT_ENABLE="0" -DSCANF_FLOAT_ENABLE="0" -DPRINTF_ADVANCED_ENABLE="0" -DSCANF_ADVANCED_ENABLE="0" -DSERIAL_PORT_TYPE_UART="1"-o debug/generic_list.o -MD)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_common.h)(0x5EA57C7C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5ED60BE4)
+I (..\..\..\..\..\devices\MIMXRT1062\fsl_device_registers.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\CMSIS\Include\core_cm7.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_version.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_compiler.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_armclang.h)(0x5EA57C74)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0CC2EC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0CC318)
+I (..\..\..\..\..\CMSIS\Include\mpu_armv7.h)(0x5EA57C74)
+I (..\..\..\..\..\devices\MIMXRT1062\system_MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062_features.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_clock.h)(0x5EA57C7C)
+I (..\..\..\..\..\components\lists\generic_list.h)(0x5EA57C7C)
+F (../../../../../components/lists/generic_list.h)(0x5EA57C7C)()
+F (../../../../../devices/MIMXRT1062/arm/startup_MIMXRT1062.s)(0x5F55B0ED)(--target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -masm=gnu -c-gdwarf-3 -Wa,-defsym,__MICROLIB=1-IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0-IC:/Keil_v5/ARM/CMSIS/Include-IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0/Device/Include-Wa,-defsym,__UVISION_VERSION=531 -Wa,-defsym,CPU_MIMXRT1062DVL6A=1 -Wa,-defsym,DEBUG=1 -Wa,-defsym,__STARTUP_INITIALIZE_NONCACHEDATA=1-o debug/startup_mimxrt1062.o)
+F (../../../../../devices/MIMXRT1062/xip/fsl_flexspi_nor_boot.c)(0x5EA57C7C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../.. -I ../../../../../CMSIS/Include -I ../../../../../devices -I ../../../../../devices/MIMXRT1062/drivers -I ../../../../../devices/MIMXRT1062 -I ../../../../../devices/MIMXRT1062/utilities/str -I ../../../../../devices/MIMXRT1062/utilities/debug_console -I ../../../../../components/uart -I ../../../../../components/serial_manager -I ../../../../../components/lists -I ../../../../../devices/MIMXRT1062/xip -I ../../../xip -I ../../../../../devices/MIMXRT1062/utilities -I ../../../../../../../../../SDK_2.8.1_EVK-MIMXRT1060/components/flash/nor/flexspi -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb -ffixed--IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0-IC:/Keil_v5/ARM/CMSIS/Include-IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0/Device/Include-D__UVISION_VERSION="531" -DCPU_MIMXRT1062DVL6A -DDEBUG -DCPU_MIMXRT1062DVL6A -DPRINTF_FLOAT_ENABLE="0" -DSCANF_FLOAT_ENABLE="0" -DPRINTF_ADVANCED_ENABLE="0" -DSCANF_ADVANCED_ENABLE="0" -DSERIAL_PORT_TYPE_UART="1"-o debug/fsl_flexspi_nor_boot.o -MD)
+I (..\..\..\..\..\devices\MIMXRT1062\xip\fsl_flexspi_nor_boot.h)(0x5EA57C7C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED60BE4)
+I (..\board.h)(0x5EA57C74)
+I (..\clock_config.h)(0x5EA57C74)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_common.h)(0x5EA57C7C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5ED60BE4)
+I (..\..\..\..\..\devices\MIMXRT1062\fsl_device_registers.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\CMSIS\Include\core_cm7.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_version.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_compiler.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_armclang.h)(0x5EA57C74)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0CC2EC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0CC318)
+I (..\..\..\..\..\CMSIS\Include\mpu_armv7.h)(0x5EA57C74)
+I (..\..\..\..\..\devices\MIMXRT1062\system_MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062_features.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_clock.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_gpio.h)(0x5EA57C7C)
+F (../../../../../devices/MIMXRT1062/xip/fsl_flexspi_nor_boot.h)(0x5EA57C7C)()
+F (../../../xip/evkmimxrt1060_flexspi_nor_config.c)(0x5EA57C7C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../.. -I ../../../../../CMSIS/Include -I ../../../../../devices -I ../../../../../devices/MIMXRT1062/drivers -I ../../../../../devices/MIMXRT1062 -I ../../../../../devices/MIMXRT1062/utilities/str -I ../../../../../devices/MIMXRT1062/utilities/debug_console -I ../../../../../components/uart -I ../../../../../components/serial_manager -I ../../../../../components/lists -I ../../../../../devices/MIMXRT1062/xip -I ../../../xip -I ../../../../../devices/MIMXRT1062/utilities -I ../../../../../../../../../SDK_2.8.1_EVK-MIMXRT1060/components/flash/nor/flexspi -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb -ffixed--IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0-IC:/Keil_v5/ARM/CMSIS/Include-IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0/Device/Include-D__UVISION_VERSION="531" -DCPU_MIMXRT1062DVL6A -DDEBUG -DCPU_MIMXRT1062DVL6A -DPRINTF_FLOAT_ENABLE="0" -DSCANF_FLOAT_ENABLE="0" -DPRINTF_ADVANCED_ENABLE="0" -DSCANF_ADVANCED_ENABLE="0" -DSERIAL_PORT_TYPE_UART="1"-o debug/evkmimxrt1060_flexspi_nor_config.o -MD)
+I (..\..\..\xip\evkmimxrt1060_flexspi_nor_config.h)(0x5EA57C7C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5ED60BE4)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_common.h)(0x5EA57C7C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5ED60BE4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5ED60BE4)
+I (..\..\..\..\..\devices\MIMXRT1062\fsl_device_registers.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\CMSIS\Include\core_cm7.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_version.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_compiler.h)(0x5EA57C74)
+I (..\..\..\..\..\CMSIS\Include\cmsis_armclang.h)(0x5EA57C74)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0CC2EC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0CC318)
+I (..\..\..\..\..\CMSIS\Include\mpu_armv7.h)(0x5EA57C74)
+I (..\..\..\..\..\devices\MIMXRT1062\system_MIMXRT1062.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\MIMXRT1062_features.h)(0x5EA57C7C)
+I (..\..\..\..\..\devices\MIMXRT1062\drivers\fsl_clock.h)(0x5EA57C7C)
+F (../../../xip/evkmimxrt1060_flexspi_nor_config.h)(0x5EA57C7C)()
+F (../../../xip/evkmimxrt1060_sdram_ini_dcd.c)(0x5EA57C7C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I .. -I ../../.. -I ../../../../../CMSIS/Include -I ../../../../../devices -I ../../../../../devices/MIMXRT1062/drivers -I ../../../../../devices/MIMXRT1062 -I ../../../../../devices/MIMXRT1062/utilities/str -I ../../../../../devices/MIMXRT1062/utilities/debug_console -I ../../../../../components/uart -I ../../../../../components/serial_manager -I ../../../../../components/lists -I ../../../../../devices/MIMXRT1062/xip -I ../../../xip -I ../../../../../devices/MIMXRT1062/utilities -I ../../../../../../../../../SDK_2.8.1_EVK-MIMXRT1060/components/flash/nor/flexspi -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb -ffixed--IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0-IC:/Keil_v5/ARM/CMSIS/Include-IC:/Keil_v5/ARM/PACK/NXP/MIMXRT1062_DFP/12.0.0/Device/Include-D__UVISION_VERSION="531" -DCPU_MIMXRT1062DVL6A -DDEBUG -DCPU_MIMXRT1062DVL6A -DPRINTF_FLOAT_ENABLE="0" -DSCANF_FLOAT_ENABLE="0" -DPRINTF_ADVANCED_ENABLE="0" -DSCANF_ADVANCED_ENABLE="0" -DSERIAL_PORT_TYPE_UART="1"-o debug/evkmimxrt1060_sdram_ini_dcd.o -MD)
+I (..\..\..\xip\evkmimxrt1060_sdram_ini_dcd.h)(0x5EA57C7C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED60BE4)
+F (../../../xip/evkmimxrt1060_sdram_ini_dcd.h)(0x5EA57C7C)()
+F (../../../../../CMSIS/Include/core_cm7.h)(0x5EA57C74)()
+F (../../../../../CMSIS/Include/mpu_armv7.h)(0x5EA57C74)()
+F (../../../../../CMSIS/Include/cmsis_armcc.h)(0x5EA57C74)()
+F (../../../../../CMSIS/Include/cmsis_armclang.h)(0x5EA57C74)()
+F (../../../../../CMSIS/Include/cmsis_armclang_ltm.h)(0x5EA57C74)()
+F (../../../../../CMSIS/Include/cmsis_compiler.h)(0x5EA57C74)()
+F (../../../../../CMSIS/Include/cmsis_gcc.h)(0x5EA57C74)()
+F (../../../../../CMSIS/Include/cmsis_iccarm.h)(0x5EA57C74)()
+F (../../../../../CMSIS/Include/cmsis_version.h)(0x5EA57C74)()
+F (../../../../../CMSIS/Include/arm_common_tables.h)(0x5EA57C74)()
+F (../../../../../CMSIS/Include/arm_const_structs.h)(0x5EA57C74)()
+F (../../../../../CMSIS/Include/arm_math.h)(0x5EA57C74)()
