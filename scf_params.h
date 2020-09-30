@@ -1,2 +1,2 @@
-#define RO_SIZE 14868
-#define RW_ZI_SIZE 528
+#define RO_SIZE 15084
+#define RW_ZI_SIZE 624

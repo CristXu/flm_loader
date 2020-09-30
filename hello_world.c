@@ -12,6 +12,8 @@
 
 #include "pin_mux.h"
 #include "clock_config.h"
+
+#include "flm_api_flash.h"
 /*******************************************************************************
  * Definitions
  ******************************************************************************/
@@ -33,38 +35,12 @@ void HardFault_Handler(){
 		"bx lr\r\n"
 	);
 }
-#define CAST_VALUE_TO_FUNC(v, type) (__typeof__(type))(v + 1)
-extern char Image$$FLASH_DATA$$Base[];
-extern char Image$$FLASH_OPS$$Base[];
-#define BASE_ADDR Image$$FLASH_DATA$$Base
-#define OPS_OFFSET Image$$FLASH_OPS$$Base
-#define FLASH_BASE (0x60000000)
-#define ulong unsigned long
-#define uchar unsigned char 
-typedef struct {
-	void (*Reloc)(ulong base);
-	int (*Init)(ulong adr, ulong clk, ulong fnc);
-	int (*UnInit)(ulong fnc);
-	int (*EraseSector)(ulong adr);
-	int (*ProgramPage)(ulong adr, ulong sz, uchar* buf);
-	int (*EraseChip)(void);
-}flash_ops_t;
-
-#include "flash.h"
-
-void Reloc(ulong base){
-	ulong tmp = base;
-	__asm (
-		"ldr r9, [%0]\r\n"
-		::"r"(&tmp):"memory"
-	);
-	memcpy((void*)base, (void*)(OPS_OFFSET + RW_VALUE_OFFSET), RW_VALUE_SIZE);
-}
 
 #define FLASH_BASE_ADDR (0x60000000U)
-#define SECTOR_SIZE     (0x1000U)
-#define PAGE_SIZE       (256U)
+#define SECTOR_SIZE     (flash_config->sectorSize)
+#define PAGE_SIZE       (flash_config->pageSize)
 #define OP_NUM          (0U)
+#define flash_config ((flexspi_nor_config_t*)(BASE_ADDR + RW_VALUE_SIZE))
 
 int main(void)
 {
@@ -76,20 +52,13 @@ int main(void)
 //	extern int flash_test(bool);
 //	flash_test(false);
 		
-	flash_ops_t ops = {
-		.Reloc = Reloc,
-		.Init = CAST_VALUE_TO_FUNC(OPS_OFFSET + INIT_OFFSET, ops.Init),
-		.UnInit = CAST_VALUE_TO_FUNC(OPS_OFFSET + UNINIT_OFFSET, ops.UnInit),
-		.EraseSector = CAST_VALUE_TO_FUNC(OPS_OFFSET + ERASESECTOR_OFFSET, ops.EraseSector),
-		.ProgramPage = CAST_VALUE_TO_FUNC(OPS_OFFSET + PROGRAMPAGE_OFFSET, ops.ProgramPage),
-		.EraseChip = CAST_VALUE_TO_FUNC(OPS_OFFSET + ERASECHIP_OFFSET, ops.EraseChip),	
-	};
+	INIT_FLASH_OPS(ops);
 	ops.Reloc((ulong)BASE_ADDR);
 	ops.Init(0,0,0);
 	ops.EraseChip();
 	ops.EraseSector(FLASH_BASE_ADDR + OP_NUM * SECTOR_SIZE);
-	char pool[PAGE_SIZE] = {0};
-	memcpy(pool, (void*)FLASH_BASE_ADDR, sizeof(pool));
+	char *pool = malloc(sizeof(char) * PAGE_SIZE);	
+	memcpy(pool, (void*)FLASH_BASE_ADDR, PAGE_SIZE);
 	memset(pool, 0x56, PAGE_SIZE);
 	ops.ProgramPage(FLASH_BASE_ADDR + OP_NUM * PAGE_SIZE, PAGE_SIZE, (uchar*)pool);
 

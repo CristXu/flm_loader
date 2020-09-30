@@ -73,8 +73,8 @@ LR_m_text m_interrupts_start m_text_start+m_text_size-m_interrupts_start {   ; l
   }
   FLASH_DATA m_data2_start EMPTY RW_ZI_SIZE{
   }  
-  FLASH_OPS +0 RO_SIZE{
-	* (.FLASH_DATAS)
+  FLASH_OPS +0 ALIGN 4 RO_SIZE{
+	* (.FLASH_OPS)
   }
   RW_m_ncache +0 EMPTY 0 {
   }

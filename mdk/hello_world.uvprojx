@@ -373,7 +373,7 @@
             <ScatterFile>MIMXRT1062xxxxx_ram.scf</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
-            <Misc>--remove --keep=*(.FLASH_DATAS)</Misc>
+            <Misc>--remove --keep=*(.FLASH_OPS)</Misc>
             <LinkerInputFile></LinkerInputFile>
             <DisabledWarnings>6314</DisabledWarnings>
           </LDads>
@@ -392,6 +392,16 @@
               <FileName>rom_api_flash.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\rom_api_flash.c</FilePath>
+            </File>
+            <File>
+              <FileName>flm_api_flash.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\flm_api_flash.h</FilePath>
+            </File>
+            <File>
+              <FileName>flm_api_flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\flm_api_flash.c</FilePath>
             </File>
           </Files>
         </Group>
