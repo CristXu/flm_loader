@@ -51,6 +51,7 @@
   #define Heap_Size                    0x0400
 #endif
 
+#include "../scf_params.h"
 LR_m_text m_interrupts_start m_text_start+m_text_size-m_interrupts_start {   ; load region size_region
   VECTOR_ROM m_interrupts_start FIXED m_interrupts_size { ; load address = execution address
     * (.isr_vector,+FIRST)
@@ -70,9 +71,9 @@ LR_m_text m_interrupts_start m_text_start+m_text_size-m_interrupts_start {   ; l
   }
   ARM_LIB_STACK m_data_start+m_data_size EMPTY -Stack_Size { ; Stack region growing down
   }
-  FLASH_DATA m_data2_start EMPTY 0x12A0{
+  FLASH_DATA m_data2_start EMPTY RW_ZI_SIZE{
   }  
-  FLASH_OPS +0 0x8000{
+  FLASH_OPS +0 RO_SIZE{
 	* (.FLASH_DATAS)
   }
   RW_m_ncache +0 EMPTY 0 {

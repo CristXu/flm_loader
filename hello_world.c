@@ -56,15 +56,16 @@ void Reloc(ulong base){
 	ulong tmp = base;
 	__asm (
 		"ldr r9, [%0]\r\n"
-		"bx lr\r\n"
 		::"r"(&tmp):"memory"
 	);
+	memcpy((void*)base, (void*)(OPS_OFFSET + RW_VALUE_OFFSET), RW_VALUE_SIZE);
 }
 
 #define FLASH_BASE_ADDR (0x60000000U)
 #define SECTOR_SIZE     (0x1000U)
 #define PAGE_SIZE       (256U)
 #define OP_NUM          (0U)
+
 int main(void)
 {
     /* Init board hardware. */
